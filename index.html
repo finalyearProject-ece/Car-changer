@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2021/08/31/19/15/car-6589920_1280.png" id="img">
+            </div>
+            <div class="controls">
+                <p id="spanCar">car</p>
+                <h1 style="padding: 10px; font-size: 28px; color: white; font-weight: 900;">Lamborghini Aventador</h1>
+                <p class="list">🚗 Mileage: 10000m</p>
+                <p class="list">⛽ Fuel: 16mpg</p><br>
+                <p class="list">Rating: ⭐⭐⭐⭐⭐</p><br><br>
+                <h3 style="color: white; font-weight: 900;">Pick a Color</h3><br>
+                <button onclick="red()" id="red" class="buttonCar" style="background-color: rgb(7, 174, 4);">red</button>
+                <button onclick="blue()" id="blue" class="buttonCar" style="background-color: rgb(244, 244, 249);">blu</button>
+                <button class="addToCart">Add to cart</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        red = () => document.getElementById("img").setAttribute("src", "https://cdn.pixabay.com/photo/2021/08/31/19/15/car-6589920_1280.png")
+        blue = () => document.getElementById("img").setAttribute("src", "https://cdn.pixabay.com/photo/2021/08/31/19/37/lamborghini-aventador-6589974_1280.png")
+    </script>
+</body>
+</html>
